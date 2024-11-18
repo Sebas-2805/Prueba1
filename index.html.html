@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario Completo</title>
+	<link rel="stylesheet" type="text/css" href="css/styles2.css">
+</head>
+
+<body>
+	<form>
+		<fieldset>
+			<h1>Información Personal</h1>
+			<label for="nombre">Nombre Completo:</label>
+			<input type="text" id="nombre" name="nombre" required>
+
+			<label for="email">Correo electrónico:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+			<input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+		</fieldset>
+
+		<fieldset>
+			<legend>Preferencias</legend>
+			<label>Género:</label>
+
+			<label for="masculino">Masculino</label>
+			<input type="radio" id="masculino" name="genero" value="masculino">
+
+			<label for="femenino">Femenino</label>
+			<input type="radio" id="femenino" name="genero" value="femenino">
+		</fieldset>
+
+		<!-- Desplegable -->
+		<fieldset>
+			<legend>Selecciona País</legend>
+			<label for="pais">País:</label>
+			<select id="pais" name="pais">
+				<option value="colombia">Colombia</option>
+				<option value="peru">Perú</option>
+				<option value="mexico">México</option>
+				<option value="brasil">Brasil</option>
+			</select>
+		</fieldset>
+
+		<!-- 
+		<fieldset>
+			<legend>Casillas de Verificación</legend>
+			<label>Verificar:</label>
+			<br>
+
+			<label for="nose1">Ni idea 1</label>
+			<input type="checkbox" id="nose1" name="probar1" value="jum">
+
+			<label for="nose2">Ni idea 2</label>
+			<input type="checkbox" id="nose2" name="probar2" value="jum2">
+
+			<br>
+			<label for="nose3">Ni idea 3</label>
+			<input type="checkbox" id="nose3" name="probar3" value="jum3">
+
+		</fieldset>
+		-->
+
+		<fieldset>
+			<label for="comentarios">Deja tus comentarios:</label>
+			<textarea id="comentarios" name="comentarios" rows="4"></textarea>
+		</fieldset>
+		<button type="submit">Enviar</button>
+	</form>
+	</body>
+</html>
